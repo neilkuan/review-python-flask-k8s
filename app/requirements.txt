@@ -1,2 +1,4 @@
 Flask
 flask
+boto3
+botocore
