@@ -17,6 +17,8 @@ def getsts():
         response = e
     except botocore.exceptions.ProfileNotFound as e:
         response = e
+    except botocore.exceptions.NoCredentialsError as e:   
+        response = e
     return "Hello, World! You are {}".format(response)
 
 if __name__ == '__main__':
